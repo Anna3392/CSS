@@ -41,9 +41,9 @@ h2:last-of-type {
 h3 {
     margin-left:40px;
 }
-h3 a:nth-of-type(2n) {
+h3:nth-of-type(2n) a {
     color:#ff4500;
 }
-h3 a:nth-of-type(2n+1) {
+h3:nth-of-type(2n+1) a {
     color:#1ead10;
 }
