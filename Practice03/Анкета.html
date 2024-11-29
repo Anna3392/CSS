@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    table {
+        margin: 10px auto;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td {
+        border: 1px solid black;
+        text-align: left;
+        vertical-align: middle;
+        min-width: 300px;
+        padding: 5px;
+    }
+    h2 {
+        text-align: center;
+    }
+    input[type="text"]:focus {
+        box-shadow: 0px 0px 10px orange;
+    }
+    input[type="radio"]:focus,
+    input[type="date"]:focus,
+    input[type="checkbox"]:focus,
+    input[type="submit"]:focus {
+        box-shadow: none;
+    }  
+    </style>
+    <title>Анкета</title>
+</head>
+<body>
+    <form action="/submit" method="post" autocomplete="off">
+        <h2>АНКЕТА</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="surname">Фамилия</label></td>
+                    <td><input type="text" id="surname" name="surname"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Имя</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="middle_name">Отчество</label></td>
+                    <td><input type="text" id="middle_name" name="middle_name"></td>
+                </tr>
+                <tr>
+                    <td><label>Пол</label> </td>
+                    <td><input type="radio" id="male" name="gender" value="male">
+                        <label for="male" name="male">Мужской</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Женский</label></td>
+                </tr>
+                <tr>
+                    <td><label for="date_of_birth">Дата рождения</label></td>
+                    <td><input type="date" id="date_of_birth" name="date_of_birth"></td>
+                </tr>
+                <tr>
+                    <td><label>Владению языками:</label></td>
+                    <td><input type="checkbox" id="by" name="lang" value="by">
+                        <label for="by">Белорусский</label><br>
+                        <input type="checkbox" id="ru" name="lang" value="ru">
+                        <label for="ru">Русский</label><br>
+                        <input type="checkbox" id="en" name="lang" value="en">
+                        <label for="en">Английский</label><br>
+                        <input type="checkbox" id="cn" name="lang" value="cn">
+                        <label for="cn">Китайский</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Адрес места жительства (пребывания)</label></td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Отправить данные"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
