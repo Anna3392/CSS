@@ -1,0 +1,8 @@
+input[type="radio"]:indeterminate + label {
+    color: #0000ff;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    color: #ff0000;
+}

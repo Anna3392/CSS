@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 700px;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        th, td {
+            border: 1px solid #777;
+            padding: 7px;
+            background-color: #f0f8ff;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 450px;
+        }
+
+        input:required {
+            border: 1px solid #ff0000;
+            box-shadow: 0px 0px 3px #ff0000;
+        }
+
+        caption {
+            font-weight: bold; 
+        }
+
+        td:only-child {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        p {
+            color: red;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <form id="form_table" name="form_table" action="/submit" method="post" autocomplete="off">  
+        <table>
+            <caption>Данные о клиенте</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Основные данные</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="surname">Фамилия</label></td>
+                    <td><input type="text" id="surname" name="surname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Имя</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="middle_name">Отчество</label></td>
+                    <td><input type="text" id="middle_name" name="middle_name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date_of_birth">Дата рождения</label></td>
+                    <td><input type="date" id="date_of_birth" name="date_of_birth"></td>
+                </tr>
+                <tr>
+                    <td>Комментарий</td>
+                    <td><textarea cols="20" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Контакты</td>
+                </tr>
+                <tr>
+                    <td><label for="address">Адрес</label></td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label>Телефон</label></td>
+                    <td><input type="tel" id="phone_numbe" name="phone_numbe" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">e-mail</label></td>
+                    <td><input type="email" id="emall" name="emall"></td>
+                </tr>
+                <tr>
+                    <td><label for="experience">Получать рассылку</label></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><p>Обязательные для заполнения поля выделены красным</p></td> 
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
