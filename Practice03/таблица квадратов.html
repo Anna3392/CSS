@@ -11,6 +11,7 @@
             width: 440px;
             height: 440px;
         }
+
         td {
             border: 1px solid black;
             width: 40px;
@@ -18,9 +19,19 @@
             text-align: center;
             vertical-align: middle;
         }
+
         tr:first-child,
         td:first-child,
-        .diagonal {
+        tr:nth-child(2) td:nth-child(2),
+        tr:nth-child(3) td:nth-child(3),
+        tr:nth-child(4) td:nth-child(4),
+        tr:nth-child(5) td:nth-child(5),
+        tr:nth-child(6) td:nth-child(6),
+        tr:nth-child(7) td:nth-child(7),
+        tr:nth-child(8) td:nth-child(8),
+        tr:nth-child(9) td:nth-child(9),
+        tr:nth-child(10) td:nth-child(10),
+        tr:nth-child(11) td:nth-child(11) {
             background-color: #5b09f7;
             color:white;
             font-weight: bold;
@@ -45,7 +56,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td class="diagonal">1</td>
+            <td>1</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -59,7 +70,7 @@
         <tr>
             <td>2</td>
             <td>2</td>
-            <td class="diagonal">4</td>
+            <td>4</td>
             <td>6</td>
             <td>8</td>
             <td>10</td>
@@ -73,7 +84,7 @@
             <td>3</td>
             <td>3</td>
             <td>6</td>
-            <td class="diagonal">9</td>
+            <td>9</td>
             <td>12</td>
             <td>15</td>
             <td>18</td>
@@ -87,7 +98,7 @@
             <td>4</td>
             <td>8</td>
             <td>12</td>
-            <td class="diagonal">16</td>
+            <td>16</td>
             <td>20</td>
             <td>24</td>
             <td>28</td>
@@ -101,7 +112,7 @@
             <td>10</td>
             <td>15</td>
             <td>20</td>
-            <td class="diagonal">25</td>
+            <td>25</td>
             <td>30</td>
             <td>35</td>
             <td>40</td>
@@ -115,7 +126,7 @@
             <td>18</td>
             <td>24</td>
             <td>30</td>
-            <td class="diagonal">36</td>
+            <td>36</td>
             <td>42</td>
             <td>48</td>
             <td>54</td>
@@ -129,7 +140,7 @@
             <td>28</td>
             <td>35</td>
             <td>42</td>
-            <td class="diagonal">49</td>
+            <td>49</td>
             <td>56</td>
             <td>63</td>
             <td>70</td>
@@ -143,7 +154,7 @@
             <td>40</td>
             <td>48</td>
             <td>56</td>
-            <td class="diagonal">64</td>
+            <td>64</td>
             <td>72</td>
             <td>80</td>
         </tr>
@@ -157,7 +168,7 @@
             <td>54</td>
             <td>63</td>
             <td>72</td>
-            <td class="diagonal">81</td>
+            <td>81</td>
             <td>90</td>
         </tr>
         <tr>
@@ -171,7 +182,7 @@
             <td>70</td>
             <td>80</td>
             <td>90</td>
-            <td class="diagonal">100</td>
+            <td>100</td>
         </tr>
     </table>
 </body>
