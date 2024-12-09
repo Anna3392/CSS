@@ -1,0 +1,22 @@
+.table1 {
+  caption-side: top;
+  border-collapse: collapse;
+  margin: 10px;
+  width: 240px;
+}
+
+.table2 {
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 4px;
+  caption-side: bottom;
+  empty-cells: hide;
+  margin: 10px;
+  width: 240px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}

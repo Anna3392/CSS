@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Bold.woff2") format("woff2"),
+    url("fonts/Tangerine-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tangerine";
+  src: url("fonts/Tangerine-Regular.woff2") format("woff2"),
+    url("fonts/Tangerine-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+div {
+  width: 400px;
+  padding: 7px;
+  font-family: Tangerine;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: green;
+}
+
+h2 {
+  color: orange;
+}
+
+.i {
+  font-style: italic;
+  text-decoration: underline double;
+}
+
+.b {
+  font-weight: bold;
+  text-decoration: underline dashed orange;
+}

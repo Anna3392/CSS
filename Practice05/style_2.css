@@ -1,0 +1,54 @@
+/* Стили для таблицы */
+table {
+  border-collapse: collapse;
+  margin-left: 100px;
+  width: 30%;
+  overflow: hidden;
+}
+
+/* Стили для ячеек */
+th,
+td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: left;
+  position: relative;
+  text-indent: 5px;
+}
+
+/* Стили для заголовка ячейки */
+th {
+  background-color: mediumpurple;
+  color: white;
+}
+
+/* Стили для шапки таблицы */
+thead {
+  background-color: slateblue;
+}
+
+/* Стили для заголовка таблицы */
+h1 {
+  margin-left: 70px;
+  color: indigo;
+  text-align: left;
+  text-shadow: 3px 3px 2px grey;
+  font-size: 25px;
+}
+
+/* Стили для подсветки столбца */
+td:hover::after {
+  background-color: rgba(140, 140, 255, 0.4);
+  content: "";
+  position: absolute;
+  height: 2000vh;
+  left: 0;
+  top: -1000vh;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Стили для подсветки строки */
+tr:hover {
+  background-color: rgba(140, 140, 255, 0.4);
+}

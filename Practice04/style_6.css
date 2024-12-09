@@ -1,0 +1,26 @@
+p {
+  width: 500px;
+  padding: 1em;
+  margin: 2em;
+  border: 1px solid;
+  font-family: "Gabriela", serif;
+  font-size: 1.2em;
+}
+
+#p_1 {
+  font-style: oblique;
+  font-variant: normal;
+  font-weight: 100;
+}
+
+#p_2 {
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 200;
+}
+
+#p_3 {
+  font-style: normal;
+  font-variant: small-caps;
+  font-weight: normal;
+}
