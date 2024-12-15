@@ -30,18 +30,13 @@ a {
   padding-right: 50px;
 }
 
-[href="#3"] {
-  display: inline-block;
-}
-
-[href="#3"]:hover:before {
+[href="#3"]:hover::before {
   content: "";
-  display: block;
-  width: 12%;
+  width: 107px;
   position: absolute;
   top: 11px;
-  left: 34%;
-  border: 1px solid aqua;
+  left: 310px;
+  border-top: 1px solid aqua;
 }
 
 [href="#3"]:hover {
