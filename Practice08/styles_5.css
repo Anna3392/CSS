@@ -1,0 +1,49 @@
+.news {
+  background-color: lightgrey;
+  border-top: 6px solid black;
+  padding: 4px;
+  padding-bottom: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  font-family: sans-serif;
+  padding-right: 30px;
+}
+
+[href="#1"] {
+  padding-left: 120px;
+}
+
+[href="#2"] {
+  position: relative;
+}
+
+[href="#2"]::after {
+  content: "▼";
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 50px;
+}
+
+[href="#3"] {
+  display: inline-block;
+}
+
+[href="#3"]:hover:before {
+  content: "";
+  display: block;
+  width: 12%;
+  position: absolute;
+  top: 11px;
+  left: 34%;
+  border: 1px solid aqua;
+}
+
+[href="#3"]:hover {
+  color: aqua;
+}

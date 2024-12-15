@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+.parent {
+  width: 700px;
+  border: 1px solid greenyellow;
+  padding: 6px;
+  margin-left: 5px;
+  background-color: mediumaquamarine;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.parent:before {
+  content: "🔏";
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.parent::after {
+  content: "✘";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: aqua;
+  font-size: 10px;
+}
+
+.fix {
+  font-size: 14px;
+  font-weight: bold;
+  color: blue;
+  padding: 35px;
+}
+
+.data {
+  font-size: 12px;
+  color: green;
+  padding: 35px;
+}
