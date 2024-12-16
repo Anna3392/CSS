@@ -1,33 +1,41 @@
-body {
+*, *::after, *::before {
   margin: 0;
+  box-sizing: border-box;
 }
-.parent {
+
+.booking {
   width: 700px;
   border: 1px solid greenyellow;
-  padding: 6px;
-  margin-left: 5px;
   background-color: mediumaquamarine;
   font-family: sans-serif;
   position: relative;
+  padding-top: 4px;
 }
 
-.parent:before {
+.notification {
+  position: relative;
+  left: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  color: blue;
+}
+
+.notification:before {
   content: "🔏";
   position: absolute;
-  left: 7px;
+  left: -30px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
 }
 
-.parent::after {
+.notification::after {
   content: "✘";
   display: inline-block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   position: absolute;
-  right: 15px;
+  right: 45px;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
@@ -35,15 +43,8 @@ body {
   font-size: 10px;
 }
 
-.fix {
-  font-size: 14px;
-  font-weight: bold;
-  color: blue;
-  padding: 35px;
-}
-
 .data {
   font-size: 12px;
   color: green;
-  padding: 35px;
+  font-weight: normal;
 }
