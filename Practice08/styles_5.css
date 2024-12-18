@@ -17,7 +17,55 @@ a {
   color: black;
   text-transform: uppercase;
   font-size: 12px;
-  margin: 8px;
+  margin: 12px;
+}
+
+[href="#1"]::before {
+  content: "▼";
+  position: absolute;
+  right: -25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[href="#2"]::before {
+  content: "▼";
+  position: absolute;
+  right: -18%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[href="#3"]::before {
+  content: "▼";
+  position: absolute;
+  right: -12%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[href="#4"]::before {
+  content: "▼";
+  position: absolute;
+  right: -15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[href="#5"]::before {
+  content: "▼";
+  position: absolute;
+  right: -28%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[href="#6"]::before {
+  content: "▼";
+  position: absolute;
+  right: -20%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 a::after {
