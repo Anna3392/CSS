@@ -1,0 +1,21 @@
+.text {
+  width: 250px;
+  min-height: 100px;
+  padding: 6px;
+  border: 2px solid rgb(83, 240, 83);
+  border-radius: 6px;
+  background-color: rgb(181, 235, 181);
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid rgb(181, 235, 181);
+  position: absolute;
+  left: 5%;
+  top: 21%;
+}
