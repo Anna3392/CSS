@@ -1,0 +1,48 @@
+.header {
+  border-top: 4px solid black;
+  background: linear-gradient(lightgrey 10%, transparent);
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+.menu {
+  display: inline-block;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 12px;
+}
+
+.analytica::before {
+  content: "▼";
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  width: 0%;
+  border-top: 2px solid black;
+  transition: all 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+  border-top: solid rgb(123, 104, 238);
+}
+
+a:hover {
+  color: rgb(70, 130, 180);
+}
